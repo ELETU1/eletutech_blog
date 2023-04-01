@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@300&display=swap");
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --black1: rgba(0, 0, 0, 0.8);
+  --black2: rgba(0, 0, 0, 0.6);
+  --white1: rgba(255, 255, 255, 0.8);
+  --white2: rgba(255, 255, 255, 0.9);
+  --mainColor: rgb(155, 8, 86);
+}
+
+/* Section 1 Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.navbar_logo {
+  width: 15%;
+  text-align: center;
+  height: 45px;
+  padding: 5px;
+  font-size: 2rem;
+  background-color: green;
+  color: #fff;
+  margin-left: 2em;
+}
+
+.navbar_logo span {
+  color: orange;
+}
+
+ul {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  padding: 0.5em 1em;
+}
+
+ul a {
+  color: var(--black1);
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.rightSide {
+  width: 10%;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  color: var(--black1);
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  box-shadow: -1px -1px 3px lightgray;
+}
+
+/* Hamburger Styles */
+.line {
+  height: 2px;
+  background-color: var(--black1);
+  width: 3%;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+.two {
+  top: 31px;
+}
+
+.three {
+  top: 37px;
+}
+
+#menuBar {
+  display: none;
+  cursor: pointer;
+}
+
+/* Section 2 Styles */
+.mainContainer {
+  height: 90vh;
+  background-image: linear-gradient(var(--black1), var(--black2)),
+    url("./image/comp2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--white2);
+  text-align: center;
+}
+
+.mainContainerText {
+  padding: 8em 0;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.heading {
+  color: var(--mainColor);
+  text-shadow: -1px 0 var(--white1), 0 1px var(--white1);
+  font-family: "Poppins", sans-serif;
+}
+
+.mainContainerText p {
+  width: 50%;
+  font-family: sans-serif;
+  margin: 1em auto;
+}
+
+.mainContainerButton {
+  margin-top: 2em;
+}
+
+.btnWhite {
+  border: 2px double var(--white1);
+  color: var(--white2);
+  margin-right: 1em;
+  padding: 0.3em 1.2em;
+  font-size: 1.1rem;
+  transition: all 0.5s ease-in;
+}
+
+.btnWhite:hover {
+  background-color: var(--white2);
+  color: var(--black1);
+  border: 2px double var(--mainColor);
+}
+
+/* Section 3 Styles */
+.cardContainer {
+  margin-top: 1em;
+}
+
+.headTitle {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 25%;
+  box-shadow: -2px -2px 10px lightgray;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.textBlog {
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+.textBlog h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0.5em;
+}
+
+.textBlog p {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.btnBlog {
+  margin: 0.7em 0;
+  border: 1px solid var(--mainColor);
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.5s ease-in;
+}
+
+.btnBlog:hover {
+  background-color: var(--mainColor);
+  color: var(--white2);
+  border: 1px solid var(--black1);
+}
+
+/* Section 4 Styles */
+.articleCard {
+  width: 90%;
+  margin: 1.5em auto;
+  display: flex;
+  align-items: center;
+}
+
+.articleCard img {
+  width: 30%;
+  object-fit: contain;
+}
+
+.articleText {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.articleText p {
+  text-align: justify;
+}
+
+/* Section 5 Styles */
+.teacherCards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3em 0 2em;
+  flex-wrap: wrap;
+}
+
+.teacherCard {
+  width: 20%;
+  text-align: center;
+  padding: 0 0.5em;
+  box-shadow: -2px -2px 10px lightgray;
+}
+
+.teacherCard p {
+  text-align: justify;
+  margin: 0.8em 0;
+  font-size: 0.8em;
+}
+
+.teacherCard img {
+  width: 80%;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+  margin: -1.5em auto 0;
+}
+
+.btnTeacher {
+  font-size: 0.9em;
+}
+
+/* Section 6 Styles */
+.enrollCard {
+  text-align: center;
+  padding: 1em;
+}
+
+.enrollCard .fas,
+.enrollCard .fab {
+  color: var(--mainColor);
+  font-size: 4rem;
+}
+
+/* Section 7 Styles */
+.footerContainer {
+  background-color: var(--black1);
+  color: var(--white1);
+  margin-top: 2em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5em 0;
+  flex-wrap: wrap;
+}
+
+.footerLeft p {
+  font-size: 1.1rem;
+}
+
+.footerMiddle p {
+  margin: 0.5em 0;
+}
+
+.footerMiddle hr {
+  width: 50%;
+  margin: 0.2em auto;
+}
+
+.footerRight {
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.app .fab {
+  color: var(--mainColor);
+  font-size: 2rem;
+  margin-left: 0.5em;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 0.4em;
+  font-weight: bold;
+  text-shadow: -0.2px 0 var(--mainColor), 0px 0.2px var(--mainColor),
+    0.2px 0 var(--mainColor), 0 -0.2px var(--mainColor);
+}
+
+.copyright p {
+  display: inline-block;
+  margin-left: 2px;
+  width: 110px;
+  text-align: center;
+  height: 25px;
+  padding: 4px;
+  font-size: 1rem;
+}

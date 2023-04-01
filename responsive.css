@@ -1,0 +1,200 @@
+@media (max-width: 1100px) {
+  html {
+    font-size: 15px;
+  }
+  .navbar {
+    max-width: 1000px;
+  }
+
+  .navbar_logo {
+    width: 20%;
+  }
+
+  .rightSide {
+    width: 15%;
+  }
+}
+
+@media (max-width: 990px) {
+  html {
+    font-size: 14px;
+  }
+
+  .navbar {
+    max-width: 800px;
+    padding: 0.5em;
+  }
+
+  .navbar_logo {
+    width: 23%;
+  }
+
+  .rightSide {
+    text-align: right;
+  }
+
+  .mainContainerText {
+    padding: 6em 0;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 12px;
+  }
+
+  .navbar_logo {
+    height: 35px;
+  }
+
+  #menuBar {
+    display: block;
+  }
+
+  ul {
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black2);
+    text-align: center;
+    width: 40%;
+    justify-content: space-around;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+  }
+
+  ul li {
+    margin-top: 0.5em;
+  }
+
+  ul a {
+    color: var(--white1);
+  }
+
+  .resBtn {
+    display: none;
+  }
+
+  .mainContainer {
+    height: 60vh;
+  }
+
+  .mainContainerText {
+    padding: 7em 0;
+  }
+
+  .cards {
+    align-items: center;
+  }
+
+  .card {
+    width: 45%;
+    margin-bottom: 1em;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card .textBlog {
+    padding: 0 1em;
+  }
+
+  .articleCard {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .articleCard img {
+    display: none;
+  }
+
+  .teacherCards {
+    margin-bottom: 3em;
+  }
+
+  .teacherCard {
+    width: 40%;
+    margin-bottom: 3em;
+  }
+
+  .teacherCard img {
+    width: 60%;
+    margin: 1em auto 0;
+  }
+
+  .footerLeft {
+    width: 30%;
+  }
+
+  .footerMiddle {
+    width: 45%;
+  }
+
+  .footerRight {
+    width: 100%;
+  }
+
+  .footerRight h1 {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar_logo {
+    width: 30%;
+  }
+
+  .line {
+    top: 18px;
+    right: 10px;
+  }
+
+  .two {
+    top: 23px;
+  }
+
+  .three {
+    top: 28px;
+  }
+
+  .card {
+    width: 75%;
+    margin-bottom: 2em;
+  }
+
+  .teacherCard {
+    width: 60%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footerLeft {
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  .footerMiddle {
+    display: none;
+  }
+
+  .footerRight {
+    width: 100%;
+  }
+
+  .footerRight h1 {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+  .copyright p {
+    height: 20px;
+    width: 90px;
+  }
+}
